@@ -16,8 +16,8 @@
 }
 #mygearphoto{
     position: relative;
-    max-width: 50%;
-    left: 25%;
+    max-width: 100%;
+    left: 0;
 }
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -112,7 +112,7 @@ input, select, textarea {
 	}
 
 	body {
-        background: url(../../images/Slideshow/YarraRiverEurekaTowerBlur.jpg) no-repeat; 
+        background: url(../../images/YarraRiverEurekaTowerBlur.png) no-repeat; 
         background-position: top;
         background-size: contain;
 
@@ -2387,7 +2387,7 @@ input, select, textarea {
 	}
 
 		.image img {
-			border-radius: 8px;
+			border-radius: 10px;
 			display: block;
 		}
 
