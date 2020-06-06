@@ -11,6 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/slideshow.css">
+        <link rel="stylesheet" href="assets/css/w3.css">
+
 	</head>
 	<body class="is-preload">
 
@@ -60,8 +63,34 @@
                         <!-- SLIDESHOW GALLERY -->
 							<section id="gallery" class="main special">
 								<header class="major">
-									<h2>Gallery - WIP</h2>
-									<p>Here are some of my favorite photos! They come from places like Melbourne, Australia, and San Juan, Puerto Rico. For a full portfolio, visit my instagram, @austinphanphotography! <br> Note: some photos have an older watermark on them, don't worry, the photos are still mine!</p>
+									<h2>Gallery</h2>
+                                        <img class="slideshow w3-animate-fading" src="images/Slideshow/1.jpg" style="width: 100%">
+                                        <img class="slideshow w3-animate-fading" src="images/Slideshow/2.jpg" style="width: 100%">
+                                        <img class="slideshow w3-animate-fading" src="images/Slideshow/3.jpg" style="width: 100%">
+                                        <img class="slideshow w3-animate-fading" src="images/Slideshow/4.jpg" style="width: 100%">
+                                        <img class="slideshow w3-animate-fading" src="images/Slideshow/5.jpg" style="width: 100%">
+                                        <img class="slideshow w3-animate-fading" src="images/Slideshow/6.jpg" style="width: 100%">
+                                        <img class="slideshow w3-animate-fading" src="images/Slideshow/7.jpg" style="width: 100%">
+                                        <img class="slideshow w3-animate-fading" src="images/Slideshow/8.jpg" style="width: 100%">
+                                        <img class="slideshow w3-animate-fading" src="images/Slideshow/9.jpg" style="width: 100%">
+                                        <script>
+                                        var myIndex = 0;
+                                        carousel();
+
+                                        function carousel() {
+                                          var i;
+                                          var x = document.getElementsByClassName("slideshow");
+                                          for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";  
+                                          }
+                                          myIndex++;
+                                          if (myIndex > x.length) {myIndex = 1}    
+                                          x[myIndex-1].style.display = "block";  
+                                          setTimeout(carousel, 5000);    
+                                        }
+                                        </script>
+                                    
+									<h6>Here are some of my favorite photos! They come from places like Melbourne, Australia, and San Juan, Puerto Rico. For a full portfolio, visit my instagram, @austinphanphotography! <br> </h6>
 								</header>
 								<footer class="major">
 									<ul class="actions special">
